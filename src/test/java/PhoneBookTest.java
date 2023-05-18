@@ -24,9 +24,9 @@ public class PhoneBookTest {
     @Test
     public void findByNameTest(){
         final String expected = "8996240";
-        PhoneBook.add("Юлия" , "8996240");
+         PhoneBook.add("Юлия" , "8996240");
 
-        final String actual = PhoneBook.findByName();
+        final String actual = PhoneBook.findByName("Юлия");
 
         Assertions.assertArrayEquals(expected.toCharArray(), actual.toCharArray());
 

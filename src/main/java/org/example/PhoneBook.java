@@ -21,7 +21,7 @@ public class PhoneBook {
           }
         throw new RuntimeException("Контакта с этим номером нету.");
     }
-    public static String findByName(){
-        return null;
+    public static String findByName(String name){
+        return phoneBook.get(name);
     }
 }
