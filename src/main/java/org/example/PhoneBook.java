@@ -8,12 +8,18 @@ public class PhoneBook {
 
     private static Map<String,String> phoneBook = new HashMap<>();
 
-    public static int add(String name, String  numberPhone){
+    public static int add(String name, String numberPhone){
         phoneBook.put(name, numberPhone);
         return phoneBook.size();
 
     }
-    public static String findByNumber(){
-        return null;
+    public static String findByNumber(String numberPhone){
+          for (Map.Entry entry : phoneBook.entrySet()) {
+              if(entry.getValue().equals(numberPhone)){
+                  return entry.getKey().toString();
+              }
+          }
+        return "Контакта с этим номером нету.";
     }
+    
 }
