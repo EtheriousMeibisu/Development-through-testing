@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class PhoneBook {
 
@@ -11,5 +12,8 @@ public class PhoneBook {
         phoneBook.put(name, numberPhone);
         return phoneBook.size();
 
+    }
+    public static String findByNumber(){
+        return null;
     }
 }

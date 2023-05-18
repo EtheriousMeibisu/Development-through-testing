@@ -12,4 +12,12 @@ public class PhoneBookTest {
 
         Assertions.assertEquals(numberContactsExpected, actual);
     }
+    @Test
+    public void findByNumberTest(){
+        final String expected = "Юлия";
+
+        final String actual = PhoneBook.findByNumber();
+
+        Assertions.assertArrayEquals(expected.toCharArray(), actual.toCharArray());
+    }
 }
