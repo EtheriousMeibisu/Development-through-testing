@@ -19,7 +19,9 @@ public class PhoneBook {
                   return entry.getKey().toString();
               }
           }
-        return "Контакта с этим номером нету.";
+        throw new RuntimeException("Контакта с этим номером нету.");
     }
-    
+    public static String findByName(){
+        return null;
+    }
 }

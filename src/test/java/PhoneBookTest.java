@@ -21,4 +21,14 @@ public class PhoneBookTest {
 
         Assertions.assertArrayEquals(expected.toCharArray(), actual.toCharArray());
     }
+    @Test
+    public void findByNameTest(){
+        final String expected = "8996240";
+        PhoneBook.add("Юлия" , "8996240");
+
+        final String actual = PhoneBook.findByName();
+
+        Assertions.assertArrayEquals(expected.toCharArray(), actual.toCharArray());
+
+    }
 }
